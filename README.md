@@ -3,7 +3,7 @@
 **Pure-Rust BLR+ARD curve fitting for interpretable, sparse modeling at the edge.**
 
 [![Crates.io](https://img.shields.io/crates/v/blr-core.svg)](https://crates.io/crates/blr-core)
-[![Docs](https://img.shields.io/docsrs/blr-core/latest)](https://docs.rs/blr-core/)
+[![Docs](https://img.shields.io/docsrs/blr-core/latest)](https://docs.rs/blr-core/latest/blr_core/)
 [![License](https://img.shields.io/crates/l/blr-core.svg)](https://github.com/wamli/blr-core/blob/main/LICENSE)
 
 ## What Is blr-core?
