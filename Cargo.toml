@@ -12,6 +12,7 @@ documentation   = "https://docs.rs/blr-core"
 readme          = "README.md"
 keywords        = ["bayesian", "regression", "ard", "embedded", "calibration"]
 categories      = ["algorithms", "science", "no-std"]
+exclude         = ["*.orig"]
 
 [package.metadata.docs.rs]
 all-features = true
