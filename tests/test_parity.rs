@@ -31,7 +31,7 @@ const REF_DIAG_SIGMA: [f64; 6] = [
 ];
 
 const REF_ALPHA: [f64; 6] = [
-    2.724259807119900e+05,
+    2.724_259_807_119_9e5,
     1.416704911931874e+01,
     1.986686948228129e+06,
     6.261289835045856e+06,
@@ -130,13 +130,13 @@ fn test_numerical_parity_hall_sensor() {
     }
 
     // ── alpha  (rel 1e-4) ────────────────────────────────────────────────────
-    for j in 0..d {
-        let rel = (model.alpha[j] - REF_ALPHA[j]).abs() / REF_ALPHA[j].max(1e-30);
+    for (j, &expected_alpha) in REF_ALPHA.iter().take(d).enumerate() {
+        let rel = (model.alpha[j] - expected_alpha).abs() / expected_alpha.max(1e-30);
         assert!(
             rel < 1e-4,
             "alpha[{j}]: Rust={:.6e} Python={:.6e} rel={rel:.2e}",
             model.alpha[j],
-            REF_ALPHA[j]
+            expected_alpha
         );
     }
 

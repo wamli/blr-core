@@ -43,7 +43,7 @@ fn main() {
     let (poly_mat, _) = features::polynomial(&x_vals, 3); // 4 cols
     let mut phi = vec![0.0f64; n * 6];
     for i in 0..n {
-        phi[i * 6 + 0] = poly_mat[i * 4]; // 1
+        phi[i * 6] = poly_mat[i * 4]; // 1
         phi[i * 6 + 1] = poly_mat[i * 4 + 1]; // x
         phi[i * 6 + 2] = poly_mat[i * 4 + 2]; // x²
         phi[i * 6 + 3] = poly_mat[i * 4 + 3]; // x³
