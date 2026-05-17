@@ -1,0 +1,39 @@
+[package]
+name            = "blr-core"
+version         = "0.1.0"
+edition         = "2021"
+authors         = ["Christoph Brewing <christoph.brewing@wamli.dev>"]
+rust-version    = "1.70"
+license         = "Apache-2.0"
+description     = "Bayesian Linear Regression with Automatic Relevance Determination for interpretable, sparse modeling in embedded and WASM environments"
+repository      = "https://github.com/wamli/blr-core"
+homepage        = "https://wamli.github.io/"
+documentation   = "https://docs.rs/blr-core"
+readme          = "README.md"
+keywords        = ["bayesian", "regression", "ard", "embedded", "calibration"]
+categories      = ["algorithms", "science", "no-std"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+crate-type = ["lib"]
+
+[features]
+default = ["std"]
+std     = ["faer/std"]   # gate faer's std feature; no rayon for WASM compat
+
+[dependencies]
+faer      = "0.13"
+thiserror = "1.0"
+serde     = "1.0"
+serde_json = "1.0"
+
+[dev-dependencies]
+approx    = "0.5"
+criterion = "0.5"
+
+[[bench]]
+name    = "blr_bench"
+harness = false
