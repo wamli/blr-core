@@ -95,7 +95,7 @@
 //!
 //! ## Performance
 //!
-//! See the [BENCHMARK_GUIDE.md](https://github.com/finfalter/da-on-demand/blob/main/crates/blr-core/BENCHMARK_GUIDE.md)
+//! See the [BENCHMARK_GUIDE.md](https://github.com/wamli/blr-core/blob/main/BENCHMARK_GUIDE.md)
 //! for detailed performance metrics and how to reproduce them on your hardware.
 //!
 //! Quick reference on a single core (Intel i7-12700K, `--release`):
