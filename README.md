@@ -4,7 +4,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/blr-core.svg)](https://crates.io/crates/blr-core)
 [![Docs](https://img.shields.io/docsrs/blr-core/latest)](https://docs.rs/blr-core/)
-[![License](https://img.shields.io/crates/l/blr-core.svg)](https://github.com/finfalter/da-on-demand#license)
+[![License](https://img.shields.io/crates/l/blr-core.svg)](https://github.com/wamli/blr-core/blob/main/LICENSE)
 
 ## What Is blr-core?
 
