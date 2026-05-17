@@ -4,21 +4,11 @@
 //! **Automatic Relevance Determination (ARD)**, designed for interpretable, sparse modeling
 //! in embedded, edge, and WASM environments.
 //!
-//! ## Part of da-on-demand
+//! ## Part of wamli
 //!
 //! `blr-core` is the mathematical foundation of the
-//! [da-on-demand](https://github.com/finfalter/da-on-demand) project, which ships business
-//! logic as portable **WebAssembly Components** that run "where the data is" — on edge
-//! devices, embedded controllers, and cloud hosts alike.
-//!
-//! The dependency chain is:
-//!
-//! ```text
-//! blr-core  (this crate: pure BLR+ARD math)
-//!     └── blr-active  (active learning orchestration)
-//!             └── sensor-calibration-component  (WASM Component, deployable binary)
-//!                         └── drift-detection-component  (companion monitoring component)
-//! ```
+//! [wamli](https://wamli.github.io/) project, providing portable, interpretable Bayesian
+//! Linear Regression for deployment across edge devices, embedded controllers, and cloud hosts.
 //!
 //! ## Key Features
 //!
